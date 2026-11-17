@@ -44,6 +44,7 @@ export default function Navbar() {
         <a href="#top" className="rail__logo" aria-label="UltraConnect Solutions — back to top">
           <img src={img('logo-mark.png')} alt="" />
         </a>
+        <p className="rail__rc">{company.rc}</p>
         <ol className="rail__list">
           {chapters.map((c) => (
             <li key={c.id}>
@@ -67,7 +68,10 @@ export default function Navbar() {
       <header className="topbar">
         <a href="#top" className="topbar__logo">
           <img src={img('logo-mark.png')} alt="" />
-          <span>UltraConnect</span>
+          <span className="topbar__brand">
+            UltraConnect
+            <small className="topbar__rc">{company.rc}</small>
+          </span>
         </a>
         <button className="topbar__toggle" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>
           <MenuIcon />
@@ -78,6 +82,10 @@ export default function Navbar() {
         <button className="menu__close" onClick={() => setOpen(false)} aria-label="Close menu">
           <CloseIcon />
         </button>
+        <div className="menu__brand">
+          <img src={img('logo-mark.png')} alt="UltraConnect Solutions" />
+          <p className="menu__rc">{company.rc}</p>
+        </div>
         <p className="menu__title">
           The <span className="accent">Content</span>
         </p>

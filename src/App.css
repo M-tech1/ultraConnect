@@ -222,6 +222,44 @@
   width: 46px;
 }
 
+.rail__rc {
+  margin: 10px 0 0;
+  font: 600 9px/1 var(--font-display);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.topbar__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.topbar__rc {
+  font: 600 10px/1 var(--font-display);
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.menu__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.menu__brand img {
+  width: 44px;
+}
+
+.menu__rc {
+  margin: 0;
+  font: 600 11px/1 var(--font-display);
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .rail__list {
   margin-block: auto;
   display: flex;

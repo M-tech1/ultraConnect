@@ -8,7 +8,7 @@ export const img = (name) => images[`./assets/img/${name}`];
 export const company = {
   name: "UltraConnect Solutions",
   tagline: "Creating Solutions That Scale",
-  rc: "RC 9237987",
+  rc: "RC: 9237987",
   phone: "+234 806 575 2329",
   phoneHref: "tel:+2348065752329",
   whatsapp: "https://wa.me/2348065752329",
